@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Current Date and Time</title>
+  </head>
+  <body>
+    <p id="datetime"></p>
+
+    <script>
+      const now = new Date();
+      const date = now.toDateString();
+      const time = now.toLocaleTimeString();
+      const datetimeString = `Today is ${date} and the time is ${time}.`;
+      document.getElementById("datetime").innerText = datetimeString;
+    </script>
+  </body>
+</html>
